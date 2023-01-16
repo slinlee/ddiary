@@ -1,0 +1,15 @@
+layout {
+	tab name="Diary" {
+		pane split_direction="vertical" {
+			pane command="diary" focus=true
+
+			pane split_direction="horizontal" {
+				pane command="diary-yesterday"
+				pane command="diary-lastyear"
+			}
+		}
+		pane size=1 borderless=true {
+			plugin location="zellij:compact-bar"
+		}
+	}
+}

@@ -1,5 +1,7 @@
 # Dear Diary
 
+Dear Diary helps writing diary entries in Markdown files using Helix text editor and Zellij.
+
 ![Dear Diary Screenshot](images/ddiary.png)
 
 ## Setup

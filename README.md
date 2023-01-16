@@ -1,5 +1,7 @@
 # Dear Diary
 
+![Dear Diary Screenshot](images/ddiary.png)
+
 ## Setup
 
 ### Prereqs

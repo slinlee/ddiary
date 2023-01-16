@@ -1,0 +1,6 @@
+#!/bin/bash
+
+YESTERDAY=$(date +%F --date "last year")
+NOTES_PATH=~/notes/diary/
+
+(cd ${NOTES_PATH} && hx ${NOTES_PATH}${YESTERDAY}.md)

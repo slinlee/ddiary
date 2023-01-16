@@ -1,0 +1,12 @@
+#!/bin/bash
+
+CONFIG_FILE=~/.config/ddiary/ddiary.kdl
+
+# ZELLIJ env var is set when in a zellij session
+# this checks that it doesn't exist
+if [ -z ${ZELLIJ+x} ]; then
+	zellij --layout $CONFIG_FILE
+else
+	zellij action new-tab -l $CONFIG_FILE
+fi
+

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+TOMORROW=$(date +%F --date "tomorrow")
+NOTES_PATH=~/notes/diary/
+
+(cd ${NOTES_PATH} && hx ${NOTES_PATH}${TOMORROW}.md)

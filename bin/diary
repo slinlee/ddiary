@@ -1,0 +1,17 @@
+#!/bin/bash
+
+TODAY=$(date +%F)
+NOTES_PATH=~/notes/diary/
+FILE_NAME=$NOTES_PATH$TODAY.md
+
+# Open the file if it exists already
+if [ -f $FILE_NAME ]
+  then
+    echo "Opening existing entry"
+
+else
+  # Add the date as a header
+  echo "# $(date '+%A - %B %d, %Y')" >> $FILE_NAME
+fi
+
+(cd $NOTES_PATH && hx $FILE_NAME)

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 YESTERDAY=$(date +%F --date "yesterday")
 NOTES_PATH=~/notes/diary/
